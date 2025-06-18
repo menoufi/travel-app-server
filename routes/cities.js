@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
   const nuevaCiudad = new cityModel({
     name: req.body.name,
     country: req.body.country,
-    img: req.body.img
+    image: req.body.image
   });
 
   nuevaCiudad.save()
